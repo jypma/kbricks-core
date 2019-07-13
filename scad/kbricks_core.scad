@@ -1074,11 +1074,11 @@ module peg_female() {
     union() {
         for(i=[0,1])
         rotate([180*i,0,0]) {
-            cylinder(7.5,3.1,3.1);
+            cylinder(7.5, 3 + axle_tolerance, 3 + axle_tolerance);
             translate([0,0,4])
-            cylinder(0.5,3.1,4.1);
+            cylinder(0.5, 3 + axle_tolerance, 4 + axle_tolerance);
             translate([0,0,4.5])
-            cylinder(3,4.1,4.1);
+            cylinder(3, 4 + axle_tolerance, 4 + axle_tolerance);
         }
     }
 }
